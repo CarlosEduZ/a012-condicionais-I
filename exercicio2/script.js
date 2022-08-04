@@ -1,6 +1,6 @@
 let idade = Number(prompt("Qual é sua idade?"))
-let medio = prompt("Você Concluiu o Ensino Médio?")
-let isCursandoOutraFaculdade = prompt("Está Cursando faculdade?")
+let medio = true
+let isCursandoOutraFaculdade = false
 
 //é de maior
 if(idade >= 18){ 
@@ -11,7 +11,7 @@ if(idade >= 18){
 };
 
 // terminou o médio
-if (medio === "Sim") {
+if (medio) {
     console.log("Concluiu");
 }else {
     console.log("Não Concluiu.");
@@ -19,8 +19,8 @@ if (medio === "Sim") {
 
 // está na faculdade
 
-if (isCursandoOutraFaculdade === "Não") {
-    console.log("Não esta cursando");
+if (isCursandoOutraFaculdade) {
+    console.log("Esta cursando");
 }else {
-    console.log("Esta cursando.");
+    console.log("Não esta cursando.");
 }
